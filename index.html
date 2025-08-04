@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog Arsitektur Komputer</title>
+  <style>
+  /* style.css */
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f5f7fa;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  background: linear-gradient(135deg, #4f46e5, #3b82f6);
+  color: white;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+main {
+  max-width: 960px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+section {
+  margin-bottom: 2rem;
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+h2 {
+  color: #1e3a8a;
+  margin-top: 0;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #e0e7ff;
+  font-size: 0.9rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+table, th, td {
+  border: 1px solid #cbd5e1;
+}
+
+th, td {
+  padding: 0.75rem;
+  text-align: left;
+}
+
+th {
+  background-color: #f1f5f9;
+  color: #1e293b;
+}
+
+.diagram {
+  background: #f1f5f9;
+  border-radius: 8px;
+  padding: 1rem;
+  font-family: monospace;
+  overflow-x: auto;
+}
+
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  section {
+    padding: 1rem;
+  }
+}
+
+  </style>
+  <script>
+  // script.js
+
+document.addEventListener("DOMContentLoaded", () => {
+  console.log("Blog Arsitektur Komputer Lanjutan siap dibaca!");
+});
+
+  </script>
+</head>
+<body>
+  
+  <header>
+    <h1>Arsitektur Komputer Lanjutan</h1>
+    <p>Oleh: <strong>Farhan Khori Alfarid</strong></p>
+  </header>
+
+  <main>
+    <section class="intro">
+      <h2>Pendahuluan</h2>
+      <p>Blog ini membahas keterkaitan CPU, Memori, dan I/O Bus secara terintegrasi dalam sistem komputer modern, ditujukan untuk pemula hingga menengah yang ingin memahami arsitektur komputer.</p>
+    </section>
+
+    <section>
+      <h2>1. CPU: Otak dari Sistem Komputer</h2>
+      <p>CPU memproses data, mengatur logika, dan mengendalikan alur instruksi. Bagian pentingnya meliputi ALU, CU, dan Register.</p>
+    </section>
+
+    <section>
+      <h2>2. Memori: Penyimpanan Data Dinamis</h2>
+      <p>Jenis memori memiliki peran dan kecepatan berbeda, dari register hingga HDD.</p>
+      <table>
+        <thead>
+          <tr>
+            <th>Jenis Memori</th>
+            <th>Kecepatan</th>
+            <th>Lokasi</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Register</td><td>~1 ns</td><td>Dalam CPU</td></tr>
+          <tr><td>Cache</td><td>1-10 ns</td><td>Dekat CPU</td></tr>
+          <tr><td>RAM</td><td>10-100 ns</td><td>Motherboard</td></tr>
+          <tr><td>SSD</td><td>~100 µs</td><td>Eksternal</td></tr>
+          <tr><td>HDD</td><td>5-10 ms</td><td>Eksternal</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>3. I/O Bus: Jalur Komunikasi</h2>
+      <p>Bus seperti Address, Data, dan Control mengatur lalu lintas data antara CPU, memori, dan perangkat I/O.</p>
+    </section>
+
+    <section>
+      <h2>Diagram Jalur Data</h2>
+      <div class="diagram">
+        <pre>
++---------+      +------------+       +--------+
+|   CPU   | <--> |   Memory   | <-->  |  I/O   |
++---------+      +------------+       +--------+
+        </pre>
+      </div>
+    </section>
+
+    <section>
+      <h2>Penutup</h2>
+      <p>Dengan memahami integrasi CPU, Memori, dan I/O, kita bisa mengerti dasar cara kerja komputer modern secara lebih mendalam.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Farhan Khori Alfarid</p>
+  </footer>
+</body>
+</html>
+
